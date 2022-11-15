@@ -45,7 +45,7 @@ jobs:
 
       - name: Run test
         run: |
-          make test
+          cd mysite && python manage.py test polls.tests
 
       # Don't publish when the action is triggered in a pull request.
       - name: Publish the site
