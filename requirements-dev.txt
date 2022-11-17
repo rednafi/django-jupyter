@@ -25,7 +25,7 @@ backcall==0.2.0
     # via ipython
 beautifulsoup4==4.11.1
     # via nbconvert
-black==22.12.0
+black[jupyter]==22.12.0
     # via -r requirements-dev.in
 bleach==5.0.1
     # via nbconvert
@@ -72,6 +72,7 @@ ipykernel==6.20.1
     #   qtconsole
 ipython==8.8.0
     # via
+    #   black
     #   ipykernel
     #   ipywidgets
     #   jupyter-console
@@ -281,6 +282,8 @@ terminado==0.17.1
     #   notebook
 tinycss2==1.2.1
     # via nbconvert
+tokenize-rt==5.0.0
+    # via black
 tornado==6.2
     # via
     #   ipykernel

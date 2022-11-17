@@ -1,9 +1,11 @@
 # Create your tests here.
 
-from random import choices
-from django.test import TestCase
-from polls import models as polls_models
 from datetime import datetime, timezone
+
+from django.test import TestCase
+
+from polls import models as polls_models
+
 
 class PollsTestCase(TestCase):
     def setUp(self):
@@ -19,7 +21,7 @@ class PollsTestCase(TestCase):
 
     def test_polls(self):
         questions = polls_models.Question.objects.all()
-        self.assertEqual(questions.count(), 2)
+        assert questions.count() == 2
 
         choices = polls_models.Choice.objects.all()
-        self.assertEqual(choices.count(), 4)
+        assert choices.count() == 4

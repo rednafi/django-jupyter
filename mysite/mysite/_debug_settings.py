@@ -1,6 +1,6 @@
-from .settings import *
+from .settings import *  # noqa
 
-INSTALLED_APPS.append("django_extensions")
+INSTALLED_APPS.append("django_extensions")  # noqa
 
 SHELL_PLUS = "ipython"
 SHELL_PLUS_PRINT_SQL = True
