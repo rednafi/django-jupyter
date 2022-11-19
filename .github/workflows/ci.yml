@@ -34,9 +34,6 @@ jobs:
           cache-dependency-path: |
             **/requirements*.txt
 
-      - run: |
-          echo "Cache hit: ${{ steps.cp311.outputs.cache-hit }}"
-
       - name: Install the dependencies
         run: |
           pip install --upgrade pip
