@@ -31,8 +31,6 @@ Make sure you're running the latest version of [docker][docker] and
     from polls import models as polls_models
     from datetime import datetime, timezone
 
-    choices = []
-
     for question_text in ("Are you okay?", "Do you wanna go there?"):
         question = polls_models.Question.objects.create(
             question_text=question_text, pub_date=datetime.now(tz=timezone.utc)
@@ -49,5 +47,5 @@ Make sure you're running the latest version of [docker][docker] and
 
 [docker]: https://www.docker.com/
 [docker-compose-v2]: https://docs.docker.com/compose/compose-v2/
-[notebook-scr]: https://user-images.githubusercontent.com/30027932/211680544-00992bf2-614b-4de4-a6f5-b991e1750b73.png
+[notebook-scr]: https://user-images.githubusercontent.com/30027932/211682786-fb64effb-eee8-4f5d-bb9d-4bf04e981d28.png
 [django-scr]: https://user-images.githubusercontent.com/30027932/211680225-853ff7ed-2d10-4f5e-8b76-3f2550ff94b9.png

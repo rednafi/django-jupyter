@@ -49,7 +49,7 @@ jobs:
 
       - name: Run test
         run: |
-          echo "test"
+          make test
 
       # Don't publish when the action is triggered in a pull request.
       - name: Publish the site

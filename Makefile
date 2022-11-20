@@ -48,7 +48,7 @@ help: ## Show this help message.
 
 .PHONY: test
 test: ## Run the tests against the current version of Python.
-	pytest -v -s
+	@docker compose exec debug mysite/manage.py test polls.tests
 
 
 .PHONY: dep-lock
