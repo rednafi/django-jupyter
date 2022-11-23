@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    working_dir: /code/mysite
+    volumes:
+      - .:/code
+
+  webserver:
+    extends:
+      service: web
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+
+  jupyter:
+    extends:
+      service: web
+    environment:
+      - DJANGO_SETTINGS_MODULE=mysite._debug_settings
+      - DJANGO_ALLOW_ASYNC_UNSAFE=true
+    command:
+      python manage.py shell_plus --notebook
+    ports:
+      - "8895:8895"
+
+  debug:
+    extends:
+      service: web
+    working_dir: /code
+    command: sleep infinity

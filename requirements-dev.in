@@ -1,0 +1,16 @@
+# For linting.
+black
+ruff
+mypy
+pre-commit
+
+# For dep management.
+pip-tools
+
+# For testing.
+pytest
+
+# Django Jupyter
+ipykernel
+jupyter
+django_extensions
