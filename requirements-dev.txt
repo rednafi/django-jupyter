@@ -61,7 +61,7 @@ idna==3.4
     # via
     #   anyio
     #   jsonschema
-ipykernel==6.21.0
+ipykernel==6.21.1
     # via
     #   -r requirements-dev.in
     #   ipywidgets
@@ -166,6 +166,7 @@ nbformat==5.7.1
     #   notebook
 nest-asyncio==1.5.6
     # via
+    #   ipykernel
     #   jupyter-client
     #   nbclassic
     #   notebook
