@@ -254,7 +254,7 @@ rfc3986-validator==0.1.1
     # via
     #   jsonschema
     #   jupyter-events
-ruff==0.0.243
+ruff==0.0.244
     # via -r requirements-dev.in
 send2trash==1.8.0
     # via
