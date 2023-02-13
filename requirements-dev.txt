@@ -61,7 +61,7 @@ idna==3.4
     # via
     #   anyio
     #   jsonschema
-ipykernel==6.21.1
+ipykernel==6.21.2
     # via
     #   -r requirements-dev.in
     #   ipywidgets
