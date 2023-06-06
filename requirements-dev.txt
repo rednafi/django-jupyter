@@ -47,7 +47,7 @@ defusedxml==0.7.1
     # via nbconvert
 django==4.2.2
     # via django-extensions
-django-extensions==3.2.1
+django-extensions==3.2.3
     # via -r requirements-dev.in
 entrypoints==0.4
     # via jupyter-client
