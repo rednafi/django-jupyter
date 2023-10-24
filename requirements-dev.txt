@@ -25,7 +25,7 @@ backcall==0.2.0
     # via ipython
 beautifulsoup4==4.11.1
     # via nbconvert
-black[jupyter]==23.7.0
+black[jupyter]==23.10.1
     # via -r requirements-dev.in
 bleach==5.0.1
     # via nbconvert
