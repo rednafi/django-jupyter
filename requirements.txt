@@ -4,9 +4,9 @@
 #
 #    pip-compile --no-emit-options --output-file=requirements.txt requirements.in
 #
-asgiref==3.6.0
+asgiref==3.7.2
     # via django
-django==4.2.5
+django==5.0
     # via -r requirements.in
 sqlparse==0.4.3
     # via django
